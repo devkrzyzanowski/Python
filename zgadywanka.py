@@ -1,11 +1,16 @@
 import random
-max = 10
-data = random.randint(1,max)
+min = int(input("Podaj minimalna liczbe : "))
+max = int(input("Podaj maxymalna liczbe : "))
+
+
+data = random.randint(min,max)
+
+
 
 for i in range(6):
     print("Proba" , i+1)
 
-    odp = input("Jaka liczbe od 1 do 10 wylosowano ")
+    odp = input("Jaka liczbe od " + str(min)+ " do " + str(max) + " wylosowano")
     if data == int(odp):
         print("Hura!!!!")
         break
