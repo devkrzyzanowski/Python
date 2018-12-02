@@ -9,8 +9,7 @@ data = random.randint(min,max)
 
 for i in range(6):
     print("Proba" , i+1)
-
-    odp = input("Jaka liczbe od " + str(min)+ " do " + str(max) + " wylosowano")
+    odp = input("Jaka liczbe od " + str(min) + " do " + str(max) + " wylosowano")
     if data == int(odp):
         print("Hura!!!!")
         break
